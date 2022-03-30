@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom right, blue, pink) no-repeat;
+    background: linear-gradient(to bottom right, #C33764, #1D2671) no-repeat;
     background-attachment: fixed;
 }
 
@@ -20,6 +20,7 @@ body{
     margin-top: 5%;
     color: white;
     font-family: "Roboto", sans-serif;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
 }
 
 /*this is the section that resizes all the box contents, including pic (200px) */
@@ -27,11 +28,12 @@ body{
     border-radius: 50%;
     width: 200px;
     height: 200px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
 }
 
 .box h1{
     font-size: 40px;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     font-weight: 100;
 }
 
@@ -39,6 +41,10 @@ body{
     font-size: 20px;
     letter-spacing: 3px;
     font-weight: 100;
+}
+
+p{
+    letter-spacing: 1px;
 }
 
 ul{
@@ -55,3 +61,54 @@ ul{
     opacity: 80%;
     font-size: 20px;
 }
+
+@media screen and (max-width: 480px) {
+    
+    .box{
+        width: 300px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        padding: 20px;
+        text-align: center;
+        margin-top: 20%;
+        margin-left: 5%;
+        margin-right: 5%;
+        color: white;
+        font-family: "Roboto", sans-serif;
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .box h1{
+        font-size: 30px;
+    }
+
+    .box h5{
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    p{
+        font-size: 14px;
+        
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+
+    .box{
+        width: 375px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        padding: 20px;
+        text-align: center;
+        margin-top: 20%;
+        margin-left: 15%;
+        margin-right: 15%;
+        color: white;
+        font-family: "Roboto", sans-serif;
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+
+
